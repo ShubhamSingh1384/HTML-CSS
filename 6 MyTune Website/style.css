@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body{
+    height: 100%;
+    margin:0;
+    font-size:16px;
+    font-family: "Lato", sans-serif;
+    font-weight: 400;
+    line-height: 1.8em;
+    color:#666;
+}
+
+.navbar{
+    background-color: blue;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top:0;
+    z-index: 50;
+}
+
+.navbar .my_tune{
+    margin-left: 60px;
+    padding: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+
+.navbar ul{
+    display: flex;
+    gap:40px;
+    color: white;
+    margin-right: 60px;
+    list-style-type: none;
+    font-size: 20px;
+}
+
+.hero{
+    background-image: url(images/hero_image.png);
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero_desp{
+    margin: 0 auto;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero_desp h1{
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+.hero_desp .p1{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.hero_desp .p2{
+    text-align: center;
+    width: 60%;
+    font-weight: 400;
+}
+
+.music_desp{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    background-color: rgb(77, 77, 250);
+    height: 90vh;
+}
+
+.music_desp .music{
+    display: flex;
+    justify-content: center;
+    align-self: safe;
+    font-size: 20px;
+    margin: 30px 0px;
+}
+
+.music_desp .music_logo{
+    margin-right: 2px;
+    font-size: 30px;
+}
+
+.music_desp .p1{
+    text-align: center;
+    width: 70%;
+    margin: 20px 0;
+}
+
+.music_desp .trail{
+    padding: 10px 20px;
+    margin: 10px 0;
+    background-color: red;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+}
+
+.music_desp .p2{
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+.ipad_iphone{
+    position: relative;
+    left:270px;
+    bottom: 240px; 
+    /* margin-top: -400px;
+    position: relative;
+    top: 400px; */
+
+}
+
+.about_music{
+    text-align: center;
+    margin-top: -200px;
+}
+
+.about_music .p1{
+    font-size:20px;
+    font-weight: 400;
+    margin-bottom: 30px;
+
+}
+
+.about_music .p2{
+    margin: 0 150px;
+}
+
+.about_music .read_more{
+    align-items: flex-start;
+    padding: 10px 25px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    margin-top: 40px;
+}
+
+.mac_img{
+    margin-top: 50px;
+}
+
+.video-section{
+    background-image: url(./images/video.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color:white;
+}
+
+.video-section h3{
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom:30px
+}
+
+.video-section p{
+    padding: 0 150px;
+}
+
+.gift_card{
+    display: flex;
+    justify-content: space-around;
+    margin: 70px 50px;
+    padding: 50px;
+    gap:30px;
+}
+
+.gift_card h3{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-weight: 400;
+}
+
+.gift_card p{
+    font-weight: 300;
+    margin-top: 20px;
+}
+
+.gift_card .redeem{
+    padding: 10px 25px;
+    margin-top: 20px;
+    background-color: blue;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 5px;
+}
+
+
+.upper_footer{
+    margin-top: -50px;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgb(5, 5, 131);
+    color:white;
+    padding: 10px;
+}
+
+.upper_footer ul{
+    list-style: none;
+}
+
+.footer-links {
+    margin-top: 20px;
+    display: grid;
+    gap: 20px;
+}
+
+.footer-links h3{
+    font-size: 20px;
+    font-weight: 600;
+    /* border: 2px solid red; */
+    border-bottom: 3px solid white;
+}
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    background-color: blue;
+}
+
+
+@media(max-width:880px){
+    .navbar{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar ul{
+        margin-bottom: 10px;
+    }
+
+    .mac_img img{
+        width: 100%;
+    }
+
+    .gift_card{
+        flex-direction: column;
+    }
+
+    .upper_footer{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .ipad_iphone{
+        all:unset;
+        width: 100vh;
+        border: 2px solid;
+        height: 100vh;
+        position: relative;
+        top: -200px;
+        text-align: center;
+    }
+
+    .phone_image img{
+        width: 600px;
+
+    }
+}
+
